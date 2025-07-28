@@ -13,6 +13,7 @@ function App() {useEffect(() => {
     once: true,
   });
 }, []);
+  // Portfolio updated - triggering deployment
 
   return (
 <div className="min-h-screen bg-gray-50 text-gray-900 font-sans px-4 pt-6 pb-12 relative w-full">
