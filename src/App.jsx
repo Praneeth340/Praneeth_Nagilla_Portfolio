@@ -76,7 +76,7 @@ function App() {useEffect(() => {
 
   <div className="mb-6">
     <h3 className="text-2xl font-semibold">🏢 Centene Corporation – Java Full Stack Developer</h3>
-    <p className="text-md text-gray-700">Jan 2024 – Present | St. Louis, USA</p>
+    <p className="text-md text-gray-700">Sep 2024 – Present | St. Louis, USA</p>
     <ul className="list-disc list-inside mt-2 text-lg">
       <li>Developed HIPAA-compliant Spring Boot microservices with OAuth2, JWT, and mTLS for secure claims and EHR integrations.</li>
       <li>Integrated Kafka and Redis for real-time eligibility validation, and exposed REST APIs for ML model inference in risk workflows.</li>
@@ -86,7 +86,7 @@ function App() {useEffect(() => {
 
   <div className="mb-6">
     <h3 className="text-2xl font-semibold">🏢 Wells Fargo – Java Developer</h3>
-    <p className="text-md text-gray-700">Aug 2021 – Feb 2023 | Pune, India</p>
+    <p className="text-md text-gray-700">Aug 2021 – July 2023 | Pune, India</p>
     <ul className="list-disc list-inside mt-2 text-lg">
       <li>Built secure APIs and batch jobs for payroll and sub-ledger reconciliation using Spring Boot, Kafka, and PostgreSQL.</li>
       <li>Created ML-ready financial datasets and optimized SQL for anomaly detection models.</li>
@@ -96,7 +96,7 @@ function App() {useEffect(() => {
 
   <div className="mb-6">
     <h3 className="text-2xl font-semibold">🏢 T-Mobile – Java Developer</h3>
-    <p className="text-md text-gray-700">Aug 2019 – July 2021 | Hyderabad, India</p>
+    <p className="text-md text-gray-700">Aug 2020 – July 2021 | Hyderabad, India</p>
     <ul className="list-disc list-inside mt-2 text-lg">
       <li>Developed Angular dashboards and integrated secure REST APIs for NEFT/RTGS/IMPS transaction modules.</li>
       <li>Implemented JWT-based authentication, responsive UI components, and role-based dashboards.</li>
