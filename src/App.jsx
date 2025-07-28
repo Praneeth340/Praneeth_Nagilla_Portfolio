@@ -76,7 +76,7 @@ function App() {useEffect(() => {
 
   <div className="mb-6">
     <h3 className="text-2xl font-semibold">🏢 Centene Corporation – Java Full Stack Developer</h3>
-    <p className="text-md text-gray-700">Sep 2024 – Present | St. Louis, USA</p>
+    <p className="text-md text-gray-700">Jan 2024 – Present | St. Louis, USA</p>
     <ul className="list-disc list-inside mt-2 text-lg">
       <li>Developed HIPAA-compliant Spring Boot microservices with OAuth2, JWT, and mTLS for secure claims and EHR integrations.</li>
       <li>Integrated Kafka and Redis for real-time eligibility validation, and exposed REST APIs for ML model inference in risk workflows.</li>
