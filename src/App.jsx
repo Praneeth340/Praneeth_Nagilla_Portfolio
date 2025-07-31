@@ -72,7 +72,7 @@ function App() {
           {/* Centene */}
           <div className="mb-4">
             <h3 className="text-xl font-semibold">Centene Corporation – Full Stack Developer</h3>
-            <p className="text-sm text-gray-300">Feb 2023 – Present | Irving, TX</p>
+            <p className="text-sm text-gray-300">Jan 2025 – Present | Irving, TX</p>
             <ul className="list-disc list-inside text-gray-200">
               <li>Integrated Kafka and Redis for real-time eligibility validation...</li>
               <li>Built scalable Spring Boot services and secure APIs...</li>
