@@ -74,9 +74,9 @@ function App() {
             <h3 className="text-xl font-semibold">Centene Corporation – Full Stack Developer</h3>
             <p className="text-sm text-gray-300">Jan 2025 – Present | Irving, TX</p>
             <ul className="list-disc list-inside text-gray-200">
-              <li>Integrated Kafka and Redis for real-time eligibility validation...</li>
-              <li>Built scalable Spring Boot services and secure APIs...</li>
-              <li>Containerized microservices with Docker and deployed via GitHub Actions...</li>
+              <li>Developed HIPAA-compliant Spring Boot microservices with OAuth2, JWT, and mTLS for secure claims and EHR integrations.</li>
+              <li>Integrated Kafka and Redis for real-time eligibility validation, and exposed REST APIs for ML model inference in risk workflows.</li>
+              <li>Automated CI/CD using GitHub Actions and Jenkins with container signing, SonarQube checks, and secure EKS deployments via Helm/Terraform.</li>
             </ul>
           </div>
 
@@ -85,8 +85,9 @@ function App() {
             <h3 className="text-xl font-semibold">Wells Fargo – Java Developer</h3>
             <p className="text-sm text-gray-300">Aug 2021 – Feb 2023 | Pune, India</p>
             <ul className="list-disc list-inside text-gray-200">
-              <li>Built secure APIs and batch jobs for payroll processing...</li>
-              <li>Worked on internal fund transfer systems with role-based access control...</li>
+              <li>Built secure APIs and batch jobs for payroll and sub-ledger reconciliation using Spring Boot, Kafka, and PostgreSQL.</li>
+              <li>Created ML-ready financial datasets and optimized SQL for anomaly detection models.</li>
+             <li>Automated pipelines with Jenkins, SonarQube, and Nexus; led backend integration for audit-ready reporting modules.</li>
             </ul>
           </div>
 
@@ -95,8 +96,9 @@ function App() {
             <h3 className="text-xl font-semibold">T-Mobile – Java Developer</h3>
             <p className="text-sm text-gray-300">Aug 2019 – July 2021 | Hyderabad, India</p>
             <ul className="list-disc list-inside text-gray-200">
-              <li>Developed Angular dashboards and integrated backend services...</li>
-              <li>Followed Agile practices and collaborated across teams...</li>
+              <li>Developed Angular dashboards and integrated secure REST APIs for NEFT/RTGS/IMPS transaction modules.</li>
+              <li>Implemented JWT-based authentication, responsive UI components, and role-based dashboards.</li>
+              <li>Shadowed backend team and contributed to debugging Node.js APIs and improving real-time frontend/backend sync.</li>
             </ul>
           </div>
 
