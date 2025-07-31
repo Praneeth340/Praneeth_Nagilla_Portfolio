@@ -4,230 +4,227 @@ import projects from "./data/projects";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-
 import "./index.css";
 
-function App() {useEffect(() => {
-  AOS.init({
-    duration: 1000,
-    once: true,
-  });
-}, []);
-  // Portfolio updated - triggering deployment
+function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
 
   return (
-<div className="min-h-screen bg-gray-50 text-gray-900 font-sans px-4 pt-6 pb-12 relative w-full">
-      {/* ✅ Top-right certification badges */}
-    
-
-      {/* ✅ Main Profile Content */}
+    <div className="min-h-screen bg-gray-50 text-gray-900 font-sans px-4 pt-6 pb-12 relative w-full">
+      {/* Main Profile Content */}
       <div className="mt-12">
         <div className="flex flex-wrap justify-center items-center gap-3 md:gap-6 mt-4 mb-6">
- <img src={`${import.meta.env.BASE_URL}aws.jpg`} alt="AWS Certified Developer" className="w-28 h-28 md:w-32 md:h-32" />
-<img src={`${import.meta.env.BASE_URL}azure.jpg`} alt="Azure Developer Associate" className="w-28 h-28 md:w-32 md:h-32" />
-<img src={`${import.meta.env.BASE_URL}mta.jpg`} alt="Microsoft MTA" className="w-28 h-28 md:w-32 md:h-32" />
-
-
-</div>
+          <img src={`${import.meta.env.BASE_URL}aws.jpg`} alt="AWS Certified Developer" className="w-28 h-28 md:w-32 md:h-32" />
+          <img src={`${import.meta.env.BASE_URL}azure.jpg`} alt="Azure Developer Associate" className="w-28 h-28 md:w-32 md:h-32" />
+          <img src={`${import.meta.env.BASE_URL}mta.jpg`} alt="Microsoft MTA" className="w-28 h-28 md:w-32 md:h-32" />
+        </div>
 
         <h1 className="text-4xl md:text-5xl font-bold mb-2 animate-fade-in-up">{profile.name}</h1>
         <h2 className="text-xl text-gray-600 mb-1">FULL STACK DEVELOPER</h2>
         <h2 className="text-lg text-gray-500 mb-2 italic">Masters in Computer Science from University of Central Missouri</h2>
         <h2 className="text-xl text-gray-600 mb-4">{profile.location}</h2>
 
-        <p className="text-md md:text-lg leading-relaxed mb-6 whitespace-pre-line">I'm a Full Stack Developer with expertise in secure, scalable enterprise applications using Java 17, Spring Boot, React, and AWS. I specialize in microservices architecture, integrating AI/ML models into backend workflows, and building secure APIs using OAuth2, RBAC, and mTLS. My experience spans regulated domains like healthcare and finance, where I’ve led development of real-time Kafka pipelines, DevSecOps CI/CD automation with GitHub Actions, and production-grade deployments across AWS and Azure. I focus on system resilience, developer experience, and future-proofing backend architecture through AI-enhanced observability and cryptographic safeguards.</p>
+        <p className="text-md md:text-lg leading-relaxed mb-6 whitespace-pre-line">
+          I'm a Full Stack Developer with expertise in secure, scalable enterprise applications using Java 17, Spring Boot, React, and AWS. I specialize in microservices architecture, integrating AI/ML models into backend workflows, and building secure APIs using OAuth2, RBAC, and mTLS. My experience spans regulated domains like healthcare and finance, where I've led development of real-time Kafka pipelines, DevSecOps CI/CD automation with GitHub Actions, and production-grade deployments across AWS and Azure. I focus on system resilience, developer experience, and future-proofing backend architecture through AI-enhanced observability and cryptographic safeguards.
+        </p>
 
         <div className="flex flex-col md:flex-row md:gap-16 mb-6">
-  <div>
-    <h3 className="text-xl font-semibold mb-2">🎯 I specialize in:</h3>
-    <ul className="list-disc list-inside">
-      <li className="whitespace-nowrap">Microservices architecture</li>
-      <li className="whitespace-nowrap">CI/CD automation</li>
-      <li className="whitespace-nowrap">Backend systems development</li>
-    </ul>
-  </div>
           <div>
-    <h3 className="text-xl font-semibold mb-2 whitespace-nowrap">📊 Industry experience in:</h3>
+            <h3 className="text-xl font-semibold mb-2">🎯 I specialize in:</h3>
+            <ul className="list-disc list-inside">
+              <li className="whitespace-nowrap">Microservices architecture</li>
+              <li className="whitespace-nowrap">CI/CD automation</li>
+              <li className="whitespace-nowrap">Backend systems development</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold mb-2 whitespace-nowrap">📊 Industry experience in:</h3>
             <ul className="list-disc list-inside">
               <li>Finance</li>
               <li>Healthcare</li>
               <li>Telecom</li>
             </ul>
           </div>
-      <div className="md:mt-0 mt-6 md:ml-[-20px]">
-    <h3 className="text-xl font-semibold mb-2">🧠 Developer Strengths</h3>
-    <ul className="list-disc list-inside">
-      <li className="whitespace-nowrap">Strong grasp of Data Structures & Algorithms for building efficient, optimized code</li>
-      <li className="whitespace-nowrap">Passionate about solving real-world problems using logical thinking and design</li>
-      <li className="whitespace-nowrap">Blend backend engineering with product mindset to build scalable, user-driven solutions</li>
-    </ul>
-  </div>
-</div>
+          <div className="md:mt-0 mt-6 md:ml-[-20px]">
+            <h3 className="text-xl font-semibold mb-2">🧠 Developer Strengths</h3>
+            <ul className="list-disc list-inside">
+              <li className="whitespace-nowrap">Strong grasp of Data Structures & Algorithms for building efficient, optimized code</li>
+              <li className="whitespace-nowrap">Passionate about solving real-world problems using logical thinking and design</li>
+              <li className="whitespace-nowrap">Blend backend engineering with product mindset to build scalable, user-driven solutions</li>
+            </ul>
+          </div>
+        </div>
 
-      
+        <div className="flex gap-4 mb-10">
+          <a href="resume.pdf" target="_blank" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">View Resume</a>
+          <a href="resume.pdf" download className="border border-gray-500 px-4 py-2 rounded hover:bg-gray-100">Download Resume</a>
+        </div>
 
-<div className="flex gap-4 mb-10">
-  <a href="resume.pdf" target="_blank" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">View Resume</a>
-  <a href="resume.pdf" download className="border border-gray-500 px-4 py-2 rounded hover:bg-gray-100">Download Resume</a>
-</div>
+        {/* Experience Section */}
+        <div className="bg-slate-800 text-white p-6 rounded-lg mb-10">
+          <h2 className="text-3xl font-bold mb-4">Experience</h2>
 
-     
-<div className="bg-gray-500 border border-gray-500 rounded-xl p-6 mt-10">
-  <h2 className="text-3xl font-bold mb-4">Experience</h2>
+          {/* Centene */}
+          <div className="mb-4">
+            <h3 className="text-xl font-semibold">Centene Corporation – Full Stack Developer</h3>
+            <p className="text-sm text-gray-300">Feb 2023 – Present | Irving, TX</p>
+            <ul className="list-disc list-inside text-gray-200">
+              <li>Integrated Kafka and Redis for real-time eligibility validation...</li>
+              <li>Built scalable Spring Boot services and secure APIs...</li>
+              <li>Containerized microservices with Docker and deployed via GitHub Actions...</li>
+            </ul>
+          </div>
 
-  <div className="mb-6">
-    <h3 className="text-2xl font-semibold">🏢 Centene Corporation – Java Full Stack Developer</h3>
-    <p className="text-md text-gray-700">Jan 2025 – Present | St. Louis, USA</p>
-    <ul className="list-disc list-inside mt-2 text-lg">
-      <li>Developed HIPAA-compliant Spring Boot microservices with OAuth2, JWT, and mTLS for secure claims and EHR integrations.</li>
-      <li>Integrated Kafka and Redis for real-time eligibility validation, and exposed REST APIs for ML model inference in risk workflows.</li>
-      <li>Automated CI/CD using GitHub Actions and Jenkins with container signing, SonarQube checks, and secure EKS deployments via Helm/Terraform.</li>
-    </ul>
-  </div>
+          {/* Wells Fargo */}
+          <div className="mb-4">
+            <h3 className="text-xl font-semibold">Wells Fargo – Java Developer</h3>
+            <p className="text-sm text-gray-300">Aug 2021 – Feb 2023 | Pune, India</p>
+            <ul className="list-disc list-inside text-gray-200">
+              <li>Built secure APIs and batch jobs for payroll processing...</li>
+              <li>Worked on internal fund transfer systems with role-based access control...</li>
+            </ul>
+          </div>
 
-  <div className="mb-6">
-    <h3 className="text-2xl font-semibold">🏢 Wells Fargo – Java Developer</h3>
-    <p className="text-md text-gray-700">Aug 2021 – Feb 2023 | Pune, India</p>
-    <ul className="list-disc list-inside mt-2 text-lg">
-      <li>Built secure APIs and batch jobs for payroll and sub-ledger reconciliation using Spring Boot, Kafka, and PostgreSQL.</li>
-      <li>Created ML-ready financial datasets and optimized SQL for anomaly detection models.</li>
-      <li>Automated pipelines with Jenkins, SonarQube, and Nexus; led backend integration for audit-ready reporting modules.</li>
-    </ul>
-  </div>
+          {/* T-Mobile */}
+          <div className="mb-4">
+            <h3 className="text-xl font-semibold">T-Mobile – Java Developer</h3>
+            <p className="text-sm text-gray-300">Aug 2019 – July 2021 | Hyderabad, India</p>
+            <ul className="list-disc list-inside text-gray-200">
+              <li>Developed Angular dashboards and integrated backend services...</li>
+              <li>Followed Agile practices and collaborated across teams...</li>
+            </ul>
+          </div>
 
-  <div className="mb-6">
-    <h3 className="text-2xl font-semibold">🏢 T-Mobile – Java Developer</h3>
-    <p className="text-md text-gray-700">Aug 2019 – July 2021 | Hyderabad, India</p>
-    <ul className="list-disc list-inside mt-2 text-lg">
-      <li>Developed Angular dashboards and integrated secure REST APIs for NEFT/RTGS/IMPS transaction modules.</li>
-      <li>Implemented JWT-based authentication, responsive UI components, and role-based dashboards.</li>
-      <li>Shadowed backend team and contributed to debugging Node.js APIs and improving real-time frontend/backend sync.</li>
-    </ul>
-  </div>
-</div>
+          {/* ECIL */}
+          <div className="mb-4">
+            <h3 className="text-xl font-semibold">ECIL – Junior Engineer</h3>
+            <p className="text-sm text-gray-300">May 2017 – Nov 2017 | Hyderabad, India</p>
+            <ul className="list-disc list-inside text-gray-200">
+              <li>Worked on Hospital Management System using Java, HTML, and SQL</li>
+              <li>Improved patient data retrieval and appointment scheduling modules</li>
+              <li>Coordinated with cross-functional teams in an agile environment</li>
+            </ul>
+          </div>
+        </div>
 
-  <div className="mb-6">
-    <h3 className="text-2xl font-semibold">💻 ECIL, Hyderabad, India – Junior Engineer</h3>
-    <p className="text-md text-gray-700">May 2017 – Nov 2017 | Hyderabad, India</p>
-    <ul className="list-disc list-inside mt-2 text-lg">
-      <li>Worked on Hospital Management System using HTML, Java, and SQL</li>
-      <li>Streamlined patient record management and appointment scheduling flows</li>
-      <li>Gained real-world experience collaborating with large, agile teams</li>
-    </ul>
-  </div>
-</div>
+        {/* Internships Section */}
+        <div className="bg-gray-700 text-white border border-gray-600 rounded-xl p-6 mt-6">
+          <h2 className="text-3xl font-bold mb-4">Internships</h2>
 
-<div className="bg-gray-700 text-white border border-gray-600 rounded-xl p-6 mt-6">
-  <h2 className="text-3xl font-bold mb-4">Internships</h2>
+          <div className="mb-6">
+            <h3 className="text-2xl font-semibold">🛠 BHEL, Hyderabad, India – Intern</h3>
+            <p className="text-md text-gray-300">May 2019 – June 2019</p>
+            <ul className="list-disc list-inside mt-2 text-lg">
+              <li>Studied PLC integration in CNC machines to improve automation and efficiency</li>
+              <li>Built a Java Spring Boot dashboard to visualize live machine metrics</li>
+              <li>Documented findings and presented insights to engineers, strengthening reporting skills</li>
+            </ul>
+          </div>
+        </div>
 
-  <div className="mb-6">
-    <h3 className="text-2xl font-semibold">🛠 BHEL, Hyderabad, India – Intern</h3>
-    <p className="text-md text-gray-300">May 2019 – June 2019</p>
-    <ul className="list-disc list-inside mt-2 text-lg">
-      <li>Studied PLC integration in CNC machines to improve automation and efficiency</li>
-      <li>Built a Java Spring Boot dashboard to visualize live machine metrics</li>
-      <li>Documented findings and presented insights to engineers, strengthening reporting skills</li>
-    </ul>
-  </div>
-
-  
-
-    
+        {/* Technical Skills Section */}
         <div className="bg-black text-white mt-10 rounded-xl overflow-hidden">
-  <h2 className="text-2xl font-bold p-4">Technical Skills</h2>
-  <table className="w-full table-auto">
+          <h2 className="text-2xl font-bold p-4">Technical Skills</h2>
+          <table className="w-full table-auto">
             <tbody>
-             <tr className="border-b border-gray-700">
-  <td className="p-3 font-bold w-1/3 border-r border-gray-700">Languages</td>
-  <td className="p-3 border-l border-gray-700">Java 17, JavaScript (ES6+), TypeScript, Python, SQL, PL/SQL, Shell Script</td>
-</tr>
-<tr className="border-b border-gray-700">
-  <td className="p-3 font-bold border-r border-gray-700">Databases</td>
-  <td className="p-3 border-l border-gray-700">PostgreSQL, Aurora PostgreSQL, MySQL, MongoDB, Redshift, DynamoDB, Snowflake</td>
-</tr>
-<tr className="border-b border-gray-700">
-  <td className="p-3 font-bold border-r border-gray-700">J2EE Technologies</td>
-  <td className="p-3 border-l border-gray-700">RESTful Web Services, JPA, Microservices, Kafka, Spring Data JPA, Spring Batch</td>
-</tr>
-<tr className="border-b border-gray-700">
-  <td className="p-3 font-bold border-r border-gray-700">UI Technologies</td>
-  <td className="p-3 border-l border-gray-700">HTML5, CSS3, JavaScript, TypeScript, Angular, React.js, Bootstrap, Redux, JSON, AJAX</td>
-</tr>
-<tr className="border-b border-gray-700">
-  <td className="p-3 font-bold border-r border-gray-700">Frameworks</td>
-  <td className="p-3 border-l border-gray-700">Spring Boot, Spring MVC, Spring Cloud, Spring Security, Hibernate, Flask, Express.js</td>
-</tr>
-<tr className="border-b border-gray-700">
-  <td className="p-3 font-bold border-r border-gray-700">Cloud Technologies</td>
-  <td className="p-3 border-l border-gray-700">AWS (EC2, S3, RDS, Lambda, EKS, KMS, IAM, CloudWatch, SageMaker, Kinesis), Azure (AKS, App Services, Azure ML), GCP (basic)</td>
-</tr>
-<tr className="border-b border-gray-700">
-  <td className="p-3 font-bold border-r border-gray-700">Messaging Services</td>
-  <td className="p-3 border-l border-gray-700">Kafka, RabbitMQ, AWS SQS, AWS SNS</td>
-</tr>
-<tr className="border-b border-gray-700">
-  <td className="p-3 font-bold border-r border-gray-700">DevOps & CI/CD</td>
-  <td className="p-3 border-l border-gray-700">Jenkins, GitHub Actions, GitLab CI, ArgoCD, Docker, Helm, Kubernetes, OpenShift</td>
-</tr>
-<tr className="border-b border-gray-700">
-  <td className="p-3 font-bold border-r border-gray-700">Monitoring & Logging</td>
-  <td className="p-3 border-l border-gray-700">Dynatrace, Grafana, Prometheus, ELK Stack, Splunk, AWS CloudWatch, CloudTrail</td>
-</tr>
-<tr className="border-b border-gray-700">
-  <td className="p-3 font-bold border-r border-gray-700">Web Services</td>
-  <td className="p-3 border-l border-gray-700">REST, GraphQL, SOAP</td>
-</tr>
-<tr className="border-b border-gray-700">
-  <td className="p-3 font-bold border-r border-gray-700">Reporting & Visualization</td>
-  <td className="p-3 border-l border-gray-700">Power BI, Tableau, Splunk, ELK Stack</td>
-</tr>
-<tr className="border-b border-gray-700">
-  <td className="p-3 font-bold border-r border-gray-700">Testing Tools</td>
-  <td className="p-3 border-l border-gray-700">JUnit, TestNG, Postman, Cypress, Mockito, Selenium, REST Assured, Cucumber</td>
-</tr>
-<tr className="border-b border-gray-700">
-  <td className="p-3 font-bold border-r border-gray-700">Version Control</td>
-  <td className="p-3 border-l border-gray-700">Git, GitHub, GitLab, Bitbucket, JIRA, Confluence</td>
-</tr>
-<tr className="border-b border-gray-700">
-  <td className="p-3 font-bold border-r border-gray-700">Security & Access</td>
-  <td className="p-3 border-l border-gray-700">OAuth2.0, JWT, IAM Roles & Policies, AWS KMS, RBAC, TLS/mTLS, Vault, Encryption Techniques</td>
-</tr>
-<tr>
-  <td className="p-3 font-bold border-r border-gray-700">Web/Application Servers</td>
-  <td className="p-3 border-l border-gray-700">Tomcat, Nginx, Apache</td>
-</tr>
-
+              <tr className="border-b border-gray-700">
+                <td className="p-3 font-bold w-1/3 border-r border-gray-700">Languages</td>
+                <td className="p-3 border-l border-gray-700">Java 17, JavaScript (ES6+), TypeScript, Python, SQL, PL/SQL, Shell Script</td>
+              </tr>
+              <tr className="border-b border-gray-700">
+                <td className="p-3 font-bold border-r border-gray-700">Databases</td>
+                <td className="p-3 border-l border-gray-700">PostgreSQL, Aurora PostgreSQL, MySQL, MongoDB, Redshift, DynamoDB, Snowflake</td>
+              </tr>
+              <tr className="border-b border-gray-700">
+                <td className="p-3 font-bold border-r border-gray-700">J2EE Technologies</td>
+                <td className="p-3 border-l border-gray-700">RESTful Web Services, JPA, Microservices, Kafka, Spring Data JPA, Spring Batch</td>
+              </tr>
+              <tr className="border-b border-gray-700">
+                <td className="p-3 font-bold border-r border-gray-700">UI Technologies</td>
+                <td className="p-3 border-l border-gray-700">HTML5, CSS3, JavaScript, TypeScript, Angular, React.js, Bootstrap, Redux, JSON, AJAX</td>
+              </tr>
+              <tr className="border-b border-gray-700">
+                <td className="p-3 font-bold border-r border-gray-700">Frameworks</td>
+                <td className="p-3 border-l border-gray-700">Spring Boot, Spring MVC, Spring Cloud, Spring Security, Hibernate, Flask, Express.js</td>
+              </tr>
+              <tr className="border-b border-gray-700">
+                <td className="p-3 font-bold border-r border-gray-700">Cloud Technologies</td>
+                <td className="p-3 border-l border-gray-700">AWS (EC2, S3, RDS, Lambda, EKS, KMS, IAM, CloudWatch, SageMaker, Kinesis), Azure (AKS, App Services, Azure ML), GCP (basic)</td>
+              </tr>
+              <tr className="border-b border-gray-700">
+                <td className="p-3 font-bold border-r border-gray-700">Messaging Services</td>
+                <td className="p-3 border-l border-gray-700">Kafka, RabbitMQ, AWS SQS, AWS SNS</td>
+              </tr>
+              <tr className="border-b border-gray-700">
+                <td className="p-3 font-bold border-r border-gray-700">DevOps & CI/CD</td>
+                <td className="p-3 border-l border-gray-700">Jenkins, GitHub Actions, GitLab CI, ArgoCD, Docker, Helm, Kubernetes, OpenShift</td>
+              </tr>
+              <tr className="border-b border-gray-700">
+                <td className="p-3 font-bold border-r border-gray-700">Monitoring & Logging</td>
+                <td className="p-3 border-l border-gray-700">Dynatrace, Grafana, Prometheus, ELK Stack, Splunk, AWS CloudWatch, CloudTrail</td>
+              </tr>
+              <tr className="border-b border-gray-700">
+                <td className="p-3 font-bold border-r border-gray-700">Web Services</td>
+                <td className="p-3 border-l border-gray-700">REST, GraphQL, SOAP</td>
+              </tr>
+              <tr className="border-b border-gray-700">
+                <td className="p-3 font-bold border-r border-gray-700">Reporting & Visualization</td>
+                <td className="p-3 border-l border-gray-700">Power BI, Tableau, Splunk, ELK Stack</td>
+              </tr>
+              <tr className="border-b border-gray-700">
+                <td className="p-3 font-bold border-r border-gray-700">Testing Tools</td>
+                <td className="p-3 border-l border-gray-700">JUnit, TestNG, Postman, Cypress, Mockito, Selenium, REST Assured, Cucumber</td>
+              </tr>
+              <tr className="border-b border-gray-700">
+                <td className="p-3 font-bold border-r border-gray-700">Version Control</td>
+                <td className="p-3 border-l border-gray-700">Git, GitHub, GitLab, Bitbucket, JIRA, Confluence</td>
+              </tr>
+              <tr className="border-b border-gray-700">
+                <td className="p-3 font-bold border-r border-gray-700">Security & Access</td>
+                <td className="p-3 border-l border-gray-700">OAuth2.0, JWT, IAM Roles & Policies, AWS KMS, RBAC, TLS/mTLS, Vault, Encryption Techniques</td>
+              </tr>
+              <tr>
+                <td className="p-3 font-bold border-r border-gray-700">Web/Application Servers</td>
+                <td className="p-3 border-l border-gray-700">Tomcat, Nginx, Apache</td>
+              </tr>
             </tbody>
           </table>
-        </div><div className="bg-white border border-gray-300 rounded-xl p-6 mt-12 shadow-md">
-  <h2 className="text-3xl font-bold mb-4 text-gray-900 flex items-center">
-    📘 <span className="ml-2">Publications</span>
-  </h2>
+        </div>
 
-  <div className="bg-gray-50 border border-gray-200 rounded-lg p-5">
-    <h3 className="text-xl font-semibold text-blue-600 mb-2">
-      Development and Performance Evaluation of NavIC-Based Reefer Monitoring System
-    </h3>
-    <p className="text-gray-800 text-md mb-1">
-      <strong>Published In:</strong> <em>Advances in Signal Processing and Communication Engineering</em>, Springer, July 2024
-    </p>
-    <p className="text-gray-700 text-md mb-3">
-      Proposed a NavIC-based monitoring system to ensure real-time tracking of environmental conditions in refrigerated containers (reefers) for transporting temperature-sensitive goods. The system leverages NavIC for precise geolocation, enhancing logistics efficiency and reducing spoilage losses.
-    </p>
-    <a
-      href="https://link.springer.com/chapter/10.1007/978-981-97-0562-7_15"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-blue-500 font-medium hover:underline"
-    >
-      📎 View Publication on Springer
-    </a>
-  </div>
-</div>
+        {/* Publications Section */}
+        <div className="bg-white border border-gray-300 rounded-xl p-6 mt-12 shadow-md">
+          <h2 className="text-3xl font-bold mb-4 text-gray-900 flex items-center">
+            📘 <span className="ml-2">Publications</span>
+          </h2>
 
-                     {/* ✅ Projects Section */}
-        <h3 className="text-3xl semibold mb-6 mt-16 text-center text-gray-900">Projects</h3>
+          <div className="bg-gray-50 border border-gray-200 rounded-lg p-5">
+            <h3 className="text-xl font-semibold text-blue-600 mb-2">
+              Development and Performance Evaluation of NavIC-Based Reefer Monitoring System
+            </h3>
+            <p className="text-gray-800 text-md mb-1">
+              <strong>Published In:</strong> <em>Advances in Signal Processing and Communication Engineering</em>, Springer, July 2024
+            </p>
+            <p className="text-gray-700 text-md mb-3">
+              Proposed a NavIC-based monitoring system to ensure real-time tracking of environmental conditions in refrigerated containers (reefers) for transporting temperature-sensitive goods. The system leverages NavIC for precise geolocation, enhancing logistics efficiency and reducing spoilage losses.
+            </p>
+            <a
+              href="https://link.springer.com/chapter/10.1007/978-981-97-0562-7_15"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 font-medium hover:underline"
+            >
+              📎 View Publication on Springer
+            </a>
+          </div>
+        </div>
+
+        {/* Projects Section */}
+        <h3 className="text-3xl font-semibold mb-6 mt-16 text-center text-gray-900">Projects</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center px-6 md:px-16 lg:px-24">
           <div className="bg-gray-100 shadow-2xl rounded-2xl p-8 hover:shadow-3xl transition-all duration-300">
             <h3 className="text-xl font-bold mb-2">🩸 Blood Management Portal</h3>
@@ -267,54 +264,46 @@ function App() {useEffect(() => {
           </div>
         </div>
 
-
-         
-<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-10">
-  <div className="bg-gray-100 shadow-md rounded-xl p-6 text-center hover:shadow-xl transition">
-    <p className="text-2xl mb-2">📞</p>
-    <p className="text-blue-600 font-medium">+1 (913) 282-1310</p>
-  </div>
-  <div className="bg-gray-100 shadow-md rounded-xl p-6 text-center hover:shadow-xl transition">
-    <p className="text-2xl mb-2">📧</p>
- <p className="text-blue-600 font-medium">
-  
-  
-  <a
-    href="https://mail.google.com/mail/?view=cm&fs=1&to=nagillapraneeth88@gmail.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="hover:underline ml-2 inline-block"
-  >
-   📩 nagillapraneeth88@gmail.com
-  </a>
-</p>
-
-  </div>
-  <div className="bg-gray-100 shadow-md rounded-xl p-6 text-center hover:shadow-xl transition">
-    <p className="text-2xl mb-2">💻</p>
-    <a href="https://github.com/Praneeth340" className="text-blue-600 font-medium" target="_blank">GitHub Profile</a>
-  </div>
-  <div className="bg-gray-100 shadow-md rounded-xl p-6 text-center hover:shadow-xl transition">
-    <p className="text-2xl mb-2">🔗</p>
-    <a href="https://www.linkedin.com/in/praneeth-nagilla/" className="text-blue-600 font-medium" target="_blank">LinkedIn Profile</a>
-  </div>
-  <div className="bg-gray-100 shadow-md rounded-xl p-6 text-center hover:shadow-xl transition">
-    <p className="text-2xl mb-2">📄</p>
-    <a href="https://doi.org/10.1007/978-981-97-0562-7_15" className="text-blue-600 font-medium" target="_blank">Springer Publication</a>
-  </div>
-   <div className="bg-gray-100 shadow-md rounded-xl p-6 text-center hover:shadow-xl transition">
-  <p className="text-2xl mb-2">📄</p>
-<a href={`${import.meta.env.BASE_URL}cert.jpg`} className="text-blue-600 font-medium" target="_blank" rel="noopener noreferrer">
-    Certifications
-  </a>
-</div>
-
-
-</div>
-
+        {/* Contact Section */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-10">
+          <div className="bg-gray-100 shadow-md rounded-xl p-6 text-center hover:shadow-xl transition">
+            <p className="text-2xl mb-2">📞</p>
+            <p className="text-blue-600 font-medium">+1 (913) 282-1310</p>
+          </div>
+          <div className="bg-gray-100 shadow-md rounded-xl p-6 text-center hover:shadow-xl transition">
+            <p className="text-2xl mb-2">📧</p>
+            <p className="text-blue-600 font-medium">
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=nagillapraneeth88@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline ml-2 inline-block"
+              >
+                📩 nagillapraneeth88@gmail.com
+              </a>
+            </p>
+          </div>
+          <div className="bg-gray-100 shadow-md rounded-xl p-6 text-center hover:shadow-xl transition">
+            <p className="text-2xl mb-2">💻</p>
+            <a href="https://github.com/Praneeth340" className="text-blue-600 font-medium" target="_blank">GitHub Profile</a>
+          </div>
+          <div className="bg-gray-100 shadow-md rounded-xl p-6 text-center hover:shadow-xl transition">
+            <p className="text-2xl mb-2">🔗</p>
+            <a href="https://www.linkedin.com/in/praneeth-nagilla/" className="text-blue-600 font-medium" target="_blank">LinkedIn Profile</a>
+          </div>
+          <div className="bg-gray-100 shadow-md rounded-xl p-6 text-center hover:shadow-xl transition">
+            <p className="text-2xl mb-2">📄</p>
+            <a href="https://doi.org/10.1007/978-981-97-0562-7_15" className="text-blue-600 font-medium" target="_blank">Springer Publication</a>
+          </div>
+          <div className="bg-gray-100 shadow-md rounded-xl p-6 text-center hover:shadow-xl transition">
+            <p className="text-2xl mb-2">📄</p>
+            <a href={`${import.meta.env.BASE_URL}cert.jpg`} className="text-blue-600 font-medium" target="_blank" rel="noopener noreferrer">
+              Certifications
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-    
   );
 }
 
