@@ -64,6 +64,16 @@ function App() {
           <a href="resume.pdf" target="_blank" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">View Resume</a>
           <a href="resume.pdf" download className="border border-gray-500 px-4 py-2 rounded hover:bg-gray-100">Download Resume</a>
         </div>
+        <section id="education" style={{ backgroundColor: '#e5e7eb', padding: '2rem', borderRadius: '1rem', margin: '2rem 1rem' }}>
+  <h2 style={{ fontSize: '1.875rem', fontWeight: 'bold', marginBottom: '1rem' }}>🎓 Education</h2>
+
+  <ul style={{ paddingLeft: '1.25rem', listStyleType: 'disc', color: '#374151' }}>
+    <li>Master of Science in Computer Science from University of Central Missouri, Missouri, USA – Dec 2024</li>
+    <li>Bachelor of Engineering in Electronics and Communication from Osmania University, Hyderabad, India – April 2021</li>
+    <li>Diploma in Communication Engineering from Government Institute of Electronics, Hyderabad, India – May 2017</li>
+  </ul>
+</section>
+
 
         {/* Experience Section */}
         <div className="bg-slate-800 text-white p-6 rounded-lg mb-10">
