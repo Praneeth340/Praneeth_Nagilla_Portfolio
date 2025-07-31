@@ -77,7 +77,7 @@ function App() {useEffect(() => {
 
   <div className="mb-6">
     <h3 className="text-2xl font-semibold">🏢 Centene Corporation – Java Full Stack Developer</h3>
-    <p className="text-md text-gray-700">Jan 2024 – Present | St. Louis, USA</p>
+    <p className="text-md text-gray-700">Jan 2025 – Present | St. Louis, USA</p>
     <ul className="list-disc list-inside mt-2 text-lg">
       <li>Developed HIPAA-compliant Spring Boot microservices with OAuth2, JWT, and mTLS for secure claims and EHR integrations.</li>
       <li>Integrated Kafka and Redis for real-time eligibility validation, and exposed REST APIs for ML model inference in risk workflows.</li>
@@ -106,6 +106,17 @@ function App() {useEffect(() => {
   </div>
 </div>
 
+  <div className="mb-6">
+    <h3 className="text-2xl font-semibold">💻 ECIL, Hyderabad, India – Junior Engineer</h3>
+    <p className="text-md text-gray-700">May 2017 – Nov 2017 | Hyderabad, India</p>
+    <ul className="list-disc list-inside mt-2 text-lg">
+      <li>Worked on Hospital Management System using HTML, Java, and SQL</li>
+      <li>Streamlined patient record management and appointment scheduling flows</li>
+      <li>Gained real-world experience collaborating with large, agile teams</li>
+    </ul>
+  </div>
+</div>
+
 <div className="bg-gray-700 text-white border border-gray-600 rounded-xl p-6 mt-6">
   <h2 className="text-3xl font-bold mb-4">Internships</h2>
 
@@ -119,16 +130,7 @@ function App() {useEffect(() => {
     </ul>
   </div>
 
-  <div>
-    <h3 className="text-2xl font-semibold">💻 ECIL, Hyderabad, India – Intern</h3>
-    <p className="text-md text-gray-300">May 2017 – Nov 2017</p>
-    <ul className="list-disc list-inside mt-2 text-lg">
-      <li>Worked on Hospital Management System using HTML, Java, and SQL</li>
-      <li>Streamlined patient record management and appointment scheduling flows</li>
-      <li>Gained real-world experience collaborating with large, agile teams</li>
-    </ul>
-  </div>
-</div>
+  
 
     
         <div className="bg-black text-white mt-10 rounded-xl overflow-hidden">
