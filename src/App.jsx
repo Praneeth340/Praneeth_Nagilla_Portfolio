@@ -68,9 +68,9 @@ function App() {
   <h2 style={{ fontSize: '1.875rem', fontWeight: 'bold', marginBottom: '1rem' }}>🎓 Education</h2>
 
   <ul style={{ paddingLeft: '1.25rem', listStyleType: 'disc', color: '#374151' }}>
-    <li>Master of Science in Computer Science from University of Central Missouri, Missouri, USA – Dec 2024</li>
-    <li>Bachelor of Engineering in Electronics and Communication from Osmania University, Hyderabad, India – April 2021</li>
-    <li>Diploma in Communication Engineering from Government Institute of Electronics, Hyderabad, India – May 2017</li>
+    <li>Master of Science in Computer Science from University of Central Missouri, Missouri, USA </li>
+    <li>Bachelor of Engineering in Electronics and Communication from Osmania University, Hyderabad, India</li>
+    <li>Diploma in Communication Engineering from Government Institute of Electronics, Hyderabad, India</li>
   </ul>
 </section>
 
