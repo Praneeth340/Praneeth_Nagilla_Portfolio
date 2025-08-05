@@ -68,9 +68,9 @@ function App() {
   <h2 style={{ fontSize: '1.875rem', fontWeight: 'bold', marginBottom: '1rem' }}>🎓 Education</h2>
 
   <ul style={{ paddingLeft: '1.25rem', listStyleType: 'disc', color: '#374151' }}>
-    <li>Master of Science in Computer Science from University of Central Missouri, Missouri, USA </li>
-    <li>Bachelor of Engineering in Electronics and Communication from Osmania University, Hyderabad, India</li>
-    <li>Diploma in Communication Engineering from Government Institute of Electronics, Hyderabad, India</li>
+    <li>Master of Science in Computer Science from University of Central Missouri, Missouri, USA - DEC 2024 </li>
+    <li>Bachelor of Engineering in Electronics and Communication from Osmania University, Hyderabad, India - Apr 2021</li>
+    <li>Diploma in Communication Engineering from Government Institute of Electronics, Hyderabad, India - May 2017</li>
   </ul>
 </section>
 
@@ -93,7 +93,7 @@ function App() {
           {/* Wells Fargo */}
           <div className="mb-4">
             <h3 className="text-xl font-semibold">Wells Fargo – Java Developer</h3>
-            <p className="text-sm text-gray-300">Aug 2021 – Feb 2023 | Pune, India</p>
+            <p className="text-sm text-gray-300">Aug 2021 – July 2023 | Pune, India</p>
             <ul className="list-disc list-inside text-gray-200">
               <li>Built secure APIs and batch jobs for payroll and sub-ledger reconciliation using Spring Boot, Kafka, and PostgreSQL.</li>
               <li>Created ML-ready financial datasets and optimized SQL for anomaly detection models.</li>
@@ -104,7 +104,7 @@ function App() {
           {/* T-Mobile */}
           <div className="mb-4">
             <h3 className="text-xl font-semibold">T-Mobile – Java Developer</h3>
-            <p className="text-sm text-gray-300">Aug 2019 – July 2021 | Hyderabad, India</p>
+            <p className="text-sm text-gray-300">Dec 2020 – July 2021 | Hyderabad, India</p>
             <ul className="list-disc list-inside text-gray-200">
               <li>Developed Angular dashboards and integrated secure REST APIs for NEFT/RTGS/IMPS transaction modules.</li>
               <li>Implemented JWT-based authentication, responsive UI components, and role-based dashboards.</li>
